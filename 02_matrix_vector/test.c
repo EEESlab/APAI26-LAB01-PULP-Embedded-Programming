@@ -38,7 +38,6 @@ void start_perf_counter()
 	pi_perf_start();
 }
 
-
 void stop_perf_counter()
 {
 	// stop the perf counter
@@ -60,7 +59,7 @@ void stop_perf_counter()
 
 	// N° Multiply Accumulate Operations (MACs)
 		/* already done with task 2.1. use the mac_counter global variable */
-	// CPI = cycles / n°instructions_executed
+	// CPI = cycles / number_of_instructions_executed
 	float cpi = /* YOUR CODE HERE*/
 	// MAC/Cycles
 	float mac_on_cycles = /* YOUR CODE HERE*/
@@ -109,8 +108,6 @@ int __attribute__((noinline)) gemv(int size_N, int size_M, int *mat_i, int *vec_
 		}
 	}
 }
-
-
 
 int main()
 {

@@ -13,5 +13,5 @@
 
 int main()
 {
-    printf("\n\nHelloworld from PULP!\n\n");
+    printf("\n\nHello, world! -from PULP\n\n");
 }

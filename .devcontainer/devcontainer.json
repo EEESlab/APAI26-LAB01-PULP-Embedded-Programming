@@ -1,0 +1,9 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "fconti/hsdes-container",
+	"image": "docker.io/fconti/hsdes-container",
+	"remoteUser": "root",
+	// Run the PULP SDK setup script to configure the environment for the current user
+	"postCreateCommand": "grep -qxF 'source /app/pulp-sdk/configs/pulp-open.sh' ~/.bashrc || echo 'source /app/pulp-sdk/configs/pulp-open.sh' >> ~/.bashrc"
+}
